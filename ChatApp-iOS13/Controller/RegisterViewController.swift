@@ -1,14 +1,14 @@
 //
-//  MainViewController.swift
+//  RegisterViewController.swift
 //  ChatApp-iOS13
 //
-//  Created by Dennis Nesanoff on 17.03.2020.
+//  Created by Dennis Nesanoff on 18.03.2020.
 //  Copyright © 2020 Dennis Nesanoff. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

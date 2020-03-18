@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="hN1-qp-0dj">
             <objects>
-                <viewController id="3Ny-wq-TXv" sceneMemberID="viewController">
+                <viewController id="3Ny-wq-TXv" customClass="RegisterViewController" customModule="ChatApp_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgY-6W-xgk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,12 +96,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apO-RC-DPK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.1159420289855" y="-271.20535714285711"/>
+            <point key="canvasLocation" x="2743" y="-267"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="IZA-7g-jec">
             <objects>
-                <viewController id="Z64-tI-B30" sceneMemberID="viewController">
+                <viewController id="Z64-tI-B30" customClass="LoginViewController" customModule="ChatApp_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ZZ-R2-m8o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,12 +186,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gps-Xm-KeD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.1159420289855" y="594.64285714285711"/>
+            <point key="canvasLocation" x="2742" y="567"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="WQz-dV-P13">
             <objects>
-                <viewController id="aQq-dL-zUg" sceneMemberID="viewController">
+                <viewController id="aQq-dL-zUg" customClass="TableViewController" customModule="ChatApp_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tM-Gj-uqh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gk-MU-Kwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3594.202898550725" y="137.94642857142856"/>
+            <point key="canvasLocation" x="3545" y="138"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="ndi-B4-Kh6">
@@ -329,10 +329,13 @@
                         <viewLayoutGuide key="safeArea" id="43G-aJ-eIa"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ffd-pl-SQk"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="xAP-h5-MUE" id="2Y9-Ve-iG6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3g-zZ-Utv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900.0000000000002" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1942" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K6Q-bp-K1H">
@@ -350,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opb-Cr-Pzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="138"/>
+            <point key="canvasLocation" x="1204" y="138"/>
         </scene>
     </scenes>
     <resources>
