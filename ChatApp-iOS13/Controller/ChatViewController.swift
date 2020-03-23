@@ -43,17 +43,18 @@ class ChatViewController: UIViewController {
                 if let error = error {
                     print(error)
                 } else {
-                    if let snapshotDocuments = querySnapshot?.documents {
-                        for doc in snapshotDocuments {
-                            let data = doc.data()
-                            if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                                let newMessage = Message(sender: messageSender, body: messageBody)
-                                self.messages.append(newMessage)
-                                
-                                DispatchQueue.main.async {
-                                    self.tableView.reloadData()
-                                }
-                            }
+                    guard let snapshotDocuments = querySnapshot?.documents else { return }
+                    
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        guard let messageSender = data[K.FStore.senderField] as? String else { return }
+                        guard let messageBody = data[K.FStore.bodyField] as? String else { return }
+                        
+                        let newMessage = Message(sender: messageSender, body: messageBody)
+                        self.messages.append(newMessage)
+                        
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
                         }
                     }
                 }
